@@ -81,6 +81,7 @@
             android:src="@drawable/selected_dot"
             android:translationX="12dp" />
 
+
         <ProgressBar
             android:id="@+id/order_packed_progress"
             style="?android:attr/progressBarStyleHorizontal"
