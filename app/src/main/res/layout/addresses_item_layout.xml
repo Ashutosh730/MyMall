@@ -88,6 +88,7 @@
             android:textAlignment="center"
             android:textSize="12sp" />
 
+
         <TextView
             android:id="@+id/remove"
             android:layout_width="wrap_content"
