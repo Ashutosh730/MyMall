@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ashish.mymall">
+    package="com.example.mymall">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -16,29 +16,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NotificationActivity"></activity>
-        <activity android:name=".SearchActivity" />
-        <activity android:name=".UpdateUserInfoActivity" />
-        <activity android:name=".OTPverificationActivity" />
-        <activity android:name=".ViewAllActivity" />
-        <activity android:name=".MyAddressesActivity" />
+        <activity android:name="com.example.mymall.NotificationActivity"></activity>
+        <activity android:name="com.example.mymall.SearchActivity" />
+        <activity android:name="com.example.mymall.UpdateUserInfoActivity" />
+        <activity android:name="com.example.mymall.OTPverificationActivity" />
+        <activity android:name="com.example.mymall.ViewAllActivity" />
+        <activity android:name="com.example.mymall.MyAddressesActivity" />
         <activity
-            android:name=".AddAddressActivity"
+            android:name="com.example.mymall.AddAddressActivity"
             android:theme="@style/RedProgressBar" />
-        <activity android:name=".DeliveryActivity" />
-        <activity android:name=".OrderDetailsActivity" />
-        <activity android:name=".ProductDetailsActivity" />
-        <activity android:name=".CategoryActivity" />
+        <activity android:name="com.example.mymall.DeliveryActivity" />
+        <activity android:name="com.example.mymall.OrderDetailsActivity" />
+        <activity android:name="com.example.mymall.ProductDetailsActivity" />
+        <activity android:name="com.example.mymall.CategoryActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.mymall.MainActivity"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".RegisterActivity"
+            android:name="com.example.mymall.RegisterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.example.mymall.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
