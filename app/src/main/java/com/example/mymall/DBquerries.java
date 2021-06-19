@@ -72,7 +72,7 @@ public class DBquerries {
     public static void loadCategories(final RecyclerView categoryRecyclerView, final Context context){
 
         categoryModelList.clear();
-        firebaseFirestore.collection("CATEGORIES").orderBy("index").get()
+        firebaseFirestore.collection("CATEGORY").orderBy("index").get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
@@ -96,8 +96,8 @@ public class DBquerries {
 
     public static void loadFragmentData(final RecyclerView myMallRecyclerView, final Context context, final int index, String categoryName){
 
-        firebaseFirestore.collection("CATEGORIES")
-                .document(categoryName.toUpperCase())
+        firebaseFirestore.collection("CATEGORY")
+                .document("HOME")
                 .collection("TOP_DEALS").orderBy("index").get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -108,7 +108,7 @@ public class DBquerries {
                                 if((long)queryDocumentSnapshot.get("view_type") == 0){
 
                                     List<SliderModel> sliderModelList=new ArrayList<SliderModel>();
-                                    long no_of_banners= (long) queryDocumentSnapshot.get("no_of_banners");
+                                    long no_of_banners= (long) queryDocumentSnapshot.get("no_of_banner");
                                     for(long x=1;x<=no_of_banners;x++){
                                         sliderModelList.add(new SliderModel(queryDocumentSnapshot.get("banner_"+x).toString(),queryDocumentSnapshot.get("banner_"+x+"_background").toString()));
                                     }

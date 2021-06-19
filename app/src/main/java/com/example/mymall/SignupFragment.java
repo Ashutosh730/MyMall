@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,7 +42,7 @@ import java.util.Map;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SignupFragment extends Fragment {
+public class    SignupFragment extends Fragment {
 
 
     public SignupFragment() {
@@ -278,7 +279,7 @@ public class SignupFragment extends Fragment {
                                 else {
                                     // If sign in fails, display a message to the user.
                                     progressBar.setVisibility(View.INVISIBLE);
-                                    Toast.makeText(getActivity(), "Authentication failed.",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getActivity(), "Authentication failed. "+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                                     signupBtn.setEnabled(true);
                                     signupBtn.setTextColor(Color.rgb(255,255,255));
                                 }

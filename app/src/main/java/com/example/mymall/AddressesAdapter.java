@@ -38,7 +38,6 @@ public class AddressesAdapter extends RecyclerView.Adapter<AddressesAdapter.View
         this.MODE=MODE;
         preSelectedPos=DBquerries.selectedAddress;
         this.loadingDialog=loadingDialog;
-
     }
 
     @NonNull
