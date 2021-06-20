@@ -137,18 +137,18 @@ public class DBquerries {
                                                 ,queryDocumentSnapshot.get("product_price_"+x).toString()
                                         ));
 
-                                        viewAllProductList.add(new WishlistModel(
-                                                queryDocumentSnapshot.get("product_ID_"+x).toString()
-                                                ,queryDocumentSnapshot.get("product_image_"+x).toString()
-                                                ,queryDocumentSnapshot.get("product_full_title_"+x).toString()
-                                                ,(long)queryDocumentSnapshot.get("free_coupans_"+x)
-                                                ,queryDocumentSnapshot.get("average_rating_"+x).toString()
-                                                ,(long)queryDocumentSnapshot.get("total_ratings_"+x)
-                                                ,queryDocumentSnapshot.get("product_price_"+x).toString()
-                                                ,queryDocumentSnapshot.get("cutted_price_"+x).toString()
-                                                ,(boolean)queryDocumentSnapshot.get("COD_"+x)
-                                                ,(boolean)queryDocumentSnapshot.get("in_stock_"+x)
-                                        ));
+//                                        viewAllProductList.add(new WishlistModel(
+//                                                queryDocumentSnapshot.get("product_ID_"+x).toString()
+//                                                ,queryDocumentSnapshot.get("product_image_"+x).toString()
+//                                                ,queryDocumentSnapshot.get("product_full_title_"+x).toString()
+//                                                ,(long)queryDocumentSnapshot.get("free_coupans_"+x)
+//                                                ,queryDocumentSnapshot.get("average_rating_"+x).toString()
+//                                                ,(long)queryDocumentSnapshot.get("total_ratings_"+x)
+//                                                ,queryDocumentSnapshot.get("product_price_"+x).toString()
+//                                                ,queryDocumentSnapshot.get("cutted_price_"+x).toString()
+//                                                ,(boolean)queryDocumentSnapshot.get("COD_"+x)
+//                                                ,(boolean)queryDocumentSnapshot.get("in_stock_"+x)
+//                                        ));
                                     }
                                     lists.get(index).add(new MyMallModel(2,queryDocumentSnapshot.get("layout_title").toString(),queryDocumentSnapshot.get("layout_background").toString(),horizontalProductScrollModelList,viewAllProductList));
 
